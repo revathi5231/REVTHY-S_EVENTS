@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffaf7;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    max-width: 1200px;
+    height: 78px;
+    margin: auto;
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 32px;
+    font-weight: 600;
+    color: #7b3f51;
+}
+
+.logo span {
+    color: #c89b3c;
+}
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #b47b2c;
+}
+
+/* BOOK BUTTON */
+
+.book-btn {
+    text-decoration: none;
+    background: #b47b2c;
+    color: white;
+    padding: 11px 22px;
+    border-radius: 25px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #7b3f51;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 100vh;
+    padding: 130px 8% 70px;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(70, 30, 40, 0.58),
+            rgba(70, 30, 40, 0.58)
+        ),
+        url("https:/wedding.jpeg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    color: white;
+}
+
+.small-title {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.hero h1 span {
+    color: #e1bc68;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* HERO BUTTONS */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.primary-btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #b47b2c;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    transition: 0.3s;
+}
+
+.primary-btn:hover {
+    background: #7b3f51;
+    transform: translateY(-2px);
+}
+
+.secondary-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 11px 24px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background: white;
+    color: #7b3f51;
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.section {
+    padding: 100px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title p {
+    color: #b47b2c;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    color: #4f2835;
+}
+
+.section-title span {
+    color: #c89b3c;
+}
+
+
+/* ================= EVENTS ================= */
+
+.event-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.event-card {
+    background: white;
+    padding: 35px 25px;
+    text-align: center;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.event-icon {
+    font-size: 45px;
+    margin-bottom: 18px;
+}
+
+.event-card h3 {
+    color: #7b3f51;
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.event-card p {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+
+/* ================= SERVICES ================= */
+
+.services {
+    padding: 100px 8%;
+    background: #f8eee9;
+}
+
+.service-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+}
+
+.service-card h3 {
+    color: #7b3f51;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* ================= GALLERY ================= */
+
+.wedding-gallery {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.photo {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.photo:hover img {
+    transform: scale(1.08);
+}
+
+
+/* ================= BOOKING ================= */
+
+.booking {
+    padding: 100px 8%;
+    background: #f8eee9;
+}
+
+form {
+    max-width: 850px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background: white;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #b47b2c;
+}
+
+form textarea {
+    grid-column: span 2;
+    height: 130px;
+    resize: none;
+}
+
+form button {
+    grid-column: span 2;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #7b3f51;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #b47b2c;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact {
+    text-align: center;
+    padding: 85px 20px;
+
+    background: #4f2835;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact span {
+    color: #e1bc68;
+}
+
+.contact p {
+    margin: 10px;
+    line-height: 1.6;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 22px;
+
+    background: #301821;
+    color: white;
+
+    font-size: 13px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .event-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .wedding-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .book-btn {
+        padding: 9px 17px;
+    }
+
+    .hero {
+        min-height: 90vh;
+        padding: 130px 7% 60px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section,
+    .services,
+    .booking {
+        padding: 70px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .event-container,
+    .service-container,
+    .wedding-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form textarea,
+    form button {
+        grid-column: span 1;
+    }
+
+    .photo {
+        height: 300px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+    }
+    /* WEDDING PACKAGES */
+
+.packages {
+    padding: 100px 8%;
+    background: #fffaf7;
+}
+
+.package-container {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.package-card {
+    position: relative;
+
+    background: white;
+
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+}
+
+.package-card h3 {
+    color: #7b3f51;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
+}
+
+.package-card h4 {
+    color: #b47b2c;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.package-card p {
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+.package-card ul {
+    list-style: none;
+
+    text-align: left;
+
+    margin-bottom: 30px;
+}
+
+.package-card li {
+    padding: 8px 0;
+
+    color: #555;
+
+    border-bottom: 1px solid #eee;
+}
+
+.popular {
+    border: 2px solid #b47b2c;
+
+    transform: scale(1.03);
+}
+
+.popular:hover {
+    transform: scale(1.03) translateY(-10px);
+}
+
+.popular-label {
+    position: absolute;
+
+    top: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #b47b2c;
+
+    color: white;
+
+    padding: 7px 18px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* PACKAGE RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .package-container {
+        grid-template-columns: 1fr;
+    }
+
+    .popular {
+        transform: none;
+    }
+
+    .popular:hover {
+        transform: translateY(-10px);
+    }
+}
+/* MOBILE MENU */
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #7b3f51;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .book-btn {
+        display: none;
+    }
+}
+/* IMAGE POPUP */
+
+.image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 9999;
+}
+
+.image-popup img {
+    max-width: 85%;
+    max-height: 85%;
+
+    border-radius: 10px;
+}
+
+.close-popup {
+    position: absolute;
+
+    top: 25px;
+    right: 40px;
+
+    font-size: 45px;
+    color: white;
+
+    cursor: pointer;
+}
+/* ABOUT PAGE */
+
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.about-text p {
+    color: #666;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+
+/* STATISTICS */
+
+.stats {
+    padding: 70px 8%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    background: #fffaf7;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px;
+}
+
+.stat-card h2 {
+    color: #b47b2c;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #666;
+}
+
+
+@media (max-width: 700px) {
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+}

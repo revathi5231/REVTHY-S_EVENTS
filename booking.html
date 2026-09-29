@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Book Your Wedding | Dream Wedding</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                Dream<span>Wedding</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <a href="booking.html" class="book-btn">
+                <button class="menu-btn" onclick="toggleMenu()">☰</button>
+                Book Now
+            </a>
+
+        </nav>
+    </header>
+
+
+    <!-- Booking Hero -->
+    <section class="hero" style="min-height: 55vh;">
+
+        <div class="hero-content">
+
+            <p class="small-title">
+                LET'S CREATE YOUR PERFECT DAY
+            </p>
+
+            <h1>
+                Book Your
+                <br>
+                <span>Dream Wedding</span>
+            </h1>
+
+            <p>
+                Tell us about your wedding and our team
+                will help you plan every detail.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Booking Form -->
+    <section class="booking">
+
+        <div class="section-title">
+
+            <p>WEDDING BOOKING</p>
+
+            <h2>
+                Tell Us About Your <span>Wedding</span>
+            </h2>
+
+        </div>
+
+
+        <form id="bookingForm">
+
+            <!-- Name -->
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Full Name"
+                required
+            >
+
+
+            <!-- Email -->
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+
+            <!-- Phone -->
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Phone Number"
+                required
+            >
+
+
+            <!-- Event -->
+            <select id="eventType" required>
+
+                <option value="">
+                    Select Wedding Event
+                </option>
+
+                <option value="Engagement">
+                    Engagement
+                </option>
+
+                <option value="Mehendi">
+                    Mehendi
+                </option>
+
+                <option value="Haldi">
+                    Haldi
+                </option>
+
+                <option value="Sangeet">
+                    Sangeet
+                </option>
+
+                <option value="Wedding">
+                    Wedding
+                </option>
+
+                <option value="Reception">
+                    Reception
+                </option>
+
+                <option value="Complete Wedding">
+                    Complete Wedding
+                </option>
+
+            </select>
+
+
+            <!-- Date -->
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+
+            <!-- Guests -->
+            <input
+                type="number"
+                id="guests"
+                placeholder="Number of Guests"
+                min="1"
+                required
+            >
+
+
+            <!-- Venue -->
+            <input
+                type="text"
+                id="venue"
+                placeholder="Preferred Venue / Location"
+                required
+            >
+
+
+            <!-- Budget -->
+            <select id="budget" required>
+
+                <option value="">
+                    Select Your Budget
+                </option>
+
+                <option value="Below ₹2 Lakhs">
+                    Below ₹2 Lakhs
+                </option>
+
+                <option value="₹2 - ₹5 Lakhs">
+                    ₹2 - ₹5 Lakhs
+                </option>
+
+                <option value="₹5 - ₹10 Lakhs">
+                    ₹5 - ₹10 Lakhs
+                </option>
+
+                <option value="₹10 - ₹20 Lakhs">
+                    ₹10 - ₹20 Lakhs
+                </option>
+
+                <option value="Above ₹20 Lakhs">
+                    Above ₹20 Lakhs
+                </option>
+
+            </select>
+
+
+            <!-- Message -->
+            <textarea
+                id="message"
+                placeholder="Tell us about your wedding requirements..."
+            ></textarea>
+
+
+            <!-- Submit -->
+            <button type="submit">
+                Submit Booking Request
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact">
+
+        <h2>
+            Need Help With Your <span>Booking?</span>
+        </h2>
+
+        <p>
+            📞 +91 98765 43210
+        </p>
+
+        <p>
+            📧 dreamwedding@gmail.com
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Dream Wedding Events. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
